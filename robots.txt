@@ -1,0 +1,13 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Disallow crawling of these directories (if any)
+Disallow: /assets/
+Disallow: /images/
+
+# Disallow specific files
+Disallow: /cv.pdf
