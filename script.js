@@ -337,24 +337,37 @@ document.querySelectorAll('section, .footer').forEach(section => {
 // Force show hero immediately
 document.querySelector('.hero').style.opacity = '1';
 document.querySelector('.hero').style.transform = 'translateY(0)';
-//================ CONTACT FORM HANDLING =================
+///================ CONTACT FORM HANDLING (সঠিক) =================
 
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
-    const submitBtn = form.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerHTML;
     
+    // ফর্ম না থাকলে error দেখান
+    if (!form) {
+        console.error("Contact form not found!");
+        return;
+    }
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (!submitBtn) {
+        console.error("Submit button not found!");
+        return;
+    }
+
+    const originalText = submitBtn.innerHTML;
+
     form.addEventListener('submit', function(e) {
-        e.preventDefault(); // পেজ রিলোড বন্ধ করুন
-        
-        // বাটন ডিসেবল করুন
+        // পেজ রিলোড বন্ধ করুন
+        e.preventDefault();
+
+        // বাটন ডিসেবল ও লোডিং ইন্ডিকেটর
         submitBtn.disabled = true;
         submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
-        
+
         // ফর্ম ডেটা সংগ্রহ করুন
         const formData = new FormData(form);
-        
-        // Formspree এ পাঠান
+
+        // Formspree এ ডেটা পাঠান
         fetch(form.action, {
             method: 'POST',
             body: formData,
@@ -364,15 +377,18 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(response => {
             if (response.ok) {
-                // সফল হলে Thank You পৃষ্ঠায় যান
-                window.location.href = 'https://dchaity.github.io/thank-you.html';
+                // ✅ সফল! Thank You পৃষ্ঠায় রিডাইরেক্ট করুন
+                window.location.href = "https://dchaity.github.io/thank-you.html";
             } else {
+                // ❌ সার্ভার সাইড সমস্যা
                 alert('Oops! Something went wrong. Please try again.');
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = originalText;
             }
         })
         .catch(error => {
+            // ❌ নেটওয়ার্ক সমস্যা
+            console.error('Error:', error);
             alert('Network error. Please check your connection.');
             submitBtn.disabled = false;
             submitBtn.innerHTML = originalText;
