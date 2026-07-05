@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chaiti Das | Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Chaiti Das - Computer Science Student & Aspiring Web Developer">
+    <meta name="keywords" content="Chaiti Das, Portfolio, Web Developer, CSE Student, BGC Trust University">
+    <meta name="author" content="Chaiti Das">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Chaiti Das | Portfolio">
+    <meta property="og:description" content="Portfolio of Chaiti Das - Computer Science Student & Aspiring Web Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:image" content="https://yourdomain.com/assets/og-image.jpg">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <link rel="icon" href="assets/favicon.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--================ LOADING ANIMATION =================-->
+    <div id="loader">
+        <div class="loader-spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!--================ NAVBAR =================-->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span>C</span>D
+            </a>
+
+            <!-- Dark Mode Toggle -->
+            <div class="nav-controls">
+                <button id="darkModeToggle" class="dark-toggle">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="hamburger" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <nav id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--================ HERO =================-->
+    <section id="home" class="hero">
+        <!-- Particle Background -->
+        <div id="particles-js"></div>
+
+        <div class="container hero-container">
+            <div class="hero-left">
+                <p class="hero-subtitle">
+                    👋 Hello, I'm
+                </p>
+                <h1>
+                    <span id="typed-text"></span>
+                </h1>
+                <h2>
+                    Computer Science Student
+                </h2>
+                <p class="hero-description">
+                    Passionate about Web Development and continuously
+                    learning modern technologies to build clean,
+                    responsive and user-friendly websites.
+                </p>
+
+                <!-- Counter - Only Projects -->
+                <div class="counter-container">
+                    <div class="counter-item">
+                        <span class="counter-number" data-target="5">0</span>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="assets/cv.pdf" class="btn primary-btn">
+                        <i class="fa-solid fa-download"></i>
+                        Download CV
+                    </a>
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="hero-social">
+                    <a href="https://github.com/dchaity" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/chaity-das-682bb32a3" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:dchaity240@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="profile-card">
+                    <img src="assets/profile.jpeg" alt="Chaiti Das">
+                    <div class="quick-info">
+                        <p>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Open to Internship
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            7th Semester
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Dohazari, Chattogram
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================ ABOUT =================-->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Get to know me better.</p>
+            </div>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>
+                        I am currently pursuing a Bachelor of Science
+                        in Computer Science and Engineering at
+                        BGC Trust University Bangladesh.
+                    </p>
+                    <p>
+                        I have a strong interest in web development
+                        and enjoy creating responsive and modern websites.
+                        My goal is to become a professional software developer
+                        by continuously learning and building real-world projects.
+                    </p>
+                    <p>
+                        I enjoy solving problems, learning new technologies,
+                        and improving my skills every day.
+                    </p>
+                </div>
+                <div class="about-info">
+                    <div class="info-item">
+                        <span>Name</span>
+                        <strong>Chaiti Das</strong>
+                    </div>
+                    <div class="info-item">
+                        <span>Date of Birth</span>
+                        <strong>12 March 2003</strong>
+                    </div>
+                    <div class="info-item">
+                        <span>Education</span>
+                        <strong>B.Sc in CSE</strong>
+                    </div>
+                    <div class="info-item">
+                        <span>Semester</span>
+                        <strong>7th Semester (Pursuing)</strong>
+                    </div>
+                    <div class="info-item">
+                        <span>Location</span>
+                        <strong>Dohazari, Chattogram</strong>
+                    </div>
+                    <div class="info-item">
+                        <span>Email</span>
+                        <strong>dchaity240@gmail.com</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================ SKILLS =================-->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+                <p>Technologies and tools I use.</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Markup Language</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Styling & Responsive Design</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Frontend Programming</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-php"></i>
+                    <h3>PHP</h3>
+                    <p>Backend Development</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>MySQL</h3>
+                    <p>Database Management</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-canva"></i>
+                    <h3>Canva</h3>
+                    <p>Graphic Design</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-file-word"></i>
+                    <h3>MS Word</h3>
+                    <p>Documentation</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-file-excel"></i>
+                    <h3>MS Excel</h3>
+                    <p>Data Analysis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================ PROJECTS =================-->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projects</h2>
+                <p>Some of my recent work.</p>
+            </div>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card featured">
+                    <div class="project-content">
+                        <span class="project-tag">Featured Project</span>
+                        <h3>Online Leave Management System</h3>
+                        <p>A responsive web application developed using HTML, CSS, PHP and MySQL for managing employee leave requests.</p>
+                        <div class="tech-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-detail-btn" data-project="1">
+                                <i class="fa-solid fa-eye"></i>
+                                View Details
+                            </a>
+                            <a href="https://github.com/dchaity" target="_blank">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A responsive personal portfolio website built to showcase my education, skills, and projects.</p>
+                        <div class="tech-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-detail-btn" data-project="2">
+                                <i class="fa-solid fa-eye"></i>
+                                View Details
+                            </a>
+                            <a href="https://github.com/dchaity" target="_blank">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================ PROJECT MODAL =================-->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modalBody">
+                <h2 id="modalTitle">Project Title</h2>
+                <p id="modalDescription">Project description goes here...</p>
+                <div id="modalTech"></div>
+                <a href="#" id="modalLink" class="btn primary-btn">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <!--================ EDUCATION =================-->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education</h2>
+                <p>My academic journey.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>B.Sc. in Computer Science & Engineering</h3>
+                        <h4>BGC Trust University Bangladesh</h4>
+                        <p>7th Semester (Pursuing)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Higher Secondary Certificate (HSC)</h3>
+                        <h4>Patiya Government College</h4>
+                        <p>GPA: 5.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================ CONTACT =================-->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Feel free to contact me.</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>dchaity240@gmail.com</p>
+                        <a href="mailto:dchaity240@gmail.com">Send Email</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-brands fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>github.com/dchaity</p>
+                        <a href="https://github.com/dchaity" target="_blank">Visit Profile</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Chaity Das</p>
+                        <a href="https://www.linkedin.com/in/chaity-das-682bb32a3" target="_blank">Connect</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Location</h3>
+                        <p>Dohazari, Chattogram</p>
+                        <a href="https://maps.google.com/?q=Dohazari,Chattogram,Bangladesh" target="_blank">View Map</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================ FOOTER =================-->
+    <footer class="footer">
+        <div class="container">
+            <h2>Chaiti Das</h2>
+            <p>Computer Science Student | Aspiring Web Developer</p>
+            <div class="footer-icons">
+                <a href="https://github.com/dchaity" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/chaity-das-682bb32a3" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:dchaity240@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+            <p class="copyright">© 2026 Chaiti Das. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll To Top -->
+    <button id="scrollTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
