@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Chaiti Das</title>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <style>
+        /*================ RESET =================*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f8f9fc 0%, #e8ecf8 100%);
+            padding: 20px;
+        }
+        
+        /*================ THANK YOU CONTAINER =================*/
+        .thankyou-container {
+            background: #ffffff;
+            padding: 4rem 3rem;
+            border-radius: 24px;
+            text-align: center;
+            max-width: 550px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            animation: fadeInUp 0.6s ease;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /*================ ICON =================*/
+        .success-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #6c63ff, #a855f7);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            animation: popIn 0.5s ease 0.3s both;
+        }
+        
+        @keyframes popIn {
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        .success-icon i {
+            font-size: 3.5rem;
+            color: #fff;
+        }
+        
+        /*================ TYPOGRAPHY =================*/
+        .thankyou-container h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 0.5rem;
+        }
+        
+        .thankyou-container .subtitle {
+            font-size: 1.1rem;
+            color: #6c63ff;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        
+        .thankyou-container .message {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        
+        /*================ BUTTONS =================*/
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #6c63ff, #a855f7);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(108, 99, 255, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #6c63ff;
+            border: 2px solid #6c63ff;
+        }
+        
+        .btn-secondary:hover {
+            background: #6c63ff;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+        
+        /*================ SOCIAL ICONS =================*/
+        .social-share {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e8ecf8;
+        }
+        
+        .social-share p {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 0.8rem;
+        }
+        
+        .social-share a {
+            display: inline-flex;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #f8f9fc;
+            align-items: center;
+            justify-content: center;
+            color: #1a1a2e;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            margin: 0 0.3rem;
+        }
+        
+        .social-share a:hover {
+            background: #6c63ff;
+            color: #fff;
+            transform: translateY(-5px);
+        }
+        
+        /*================ RESPONSIVE =================*/
+        @media (max-width: 480px) {
+            .thankyou-container {
+                padding: 2.5rem 1.5rem;
+            }
+            
+            .thankyou-container h1 {
+                font-size: 2rem;
+            }
+            
+            .success-icon {
+                width: 80px;
+                height: 80px;
+            }
+            
+            .success-icon i {
+                font-size: 2.8rem;
+            }
+            
+            .btn-group {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="thankyou-container">
+        <!-- Success Icon -->
+        <div class="success-icon">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        
+        <!-- Title -->
+        <h1>Thank You! 🙏</h1>
+        <p class="subtitle">Your message has been sent successfully</p>
+        
+        <!-- Message -->
+        <p class="message">
+            I appreciate you reaching out to me. I'll review your message 
+            and get back to you as soon as possible. 
+            <br><br>
+            Have a great day! 🌟
+        </p>
+        
+        <!-- Buttons -->
+        <div class="btn-group">
+            <a href="index.html" class="btn btn-primary">
+                <i class="fa-solid fa-house"></i>
+                Back to Home
+            </a>
+            <a href="index.html#contact" class="btn btn-secondary">
+                <i class="fa-solid fa-envelope"></i>
+                Send Another
+            </a>
+        </div>
+        
+        <!-- Social Share -->
+        <div class="social-share">
+            <p>Connect with me on social media</p>
+            <div>
+                <a href="https://github.com/dchaity" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/chaity-das-682bb32a3" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:dchaity240@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
