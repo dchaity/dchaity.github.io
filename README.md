@@ -2,7 +2,7 @@
 
 # 🌸 Chaiti Das — Personal Portfolio
 
-### Computer Science Student · Aspiring Full-Stack Developer · Open to Internships
+### Computer Science Student · Aspiring Developer · Open to Internships
 
 A soft, modern, and fully responsive portfolio showcasing my education, projects, skills, and learning journey — built from scratch with vanilla HTML, CSS, and JavaScript.
 
@@ -22,14 +22,13 @@ A soft, modern, and fully responsive portfolio showcasing my education, projects
 I am currently in my **7th semester** of B.Sc. in Computer Science & Engineering at **BGC Trust University Bangladesh** (CGPA: **3.57**). I am actively looking for a junior developer or internship opportunity where I can contribute, learn, and grow.
 
 * **Live Website:** [https://dchaity.github.io/](https://dchaity.github.io/)
-* **Interactive CV:** [View CV Page](https://dchaity.github.io/cv.html)
+* **View CV (PDF):** [https://dchaity.github.io/assets/cv.pdf](https://dchaity.github.io/assets/cv.pdf)
 
 ---
 
 ## ✨ Features
 
 * **Modern UI/UX:** Soft lavender aesthetic, dark mode support with local storage persistence, particle background, and smooth scrolling.
-* **Interactive CV:** Clean single-column layout with an ATS-friendly "Save as PDF" option.
 * **Responsive Layout:** Mobile-first design optimized for all screen sizes.
 * **Contact Form:** Integrated via Formspree with a custom success redirect page.
 
